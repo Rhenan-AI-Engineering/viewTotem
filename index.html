@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Meu Modelo 3D em Realidade Aumentada</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        /* Apenas para garantir que o visualizador ocupe toda a tela */
+        model-viewer {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <model-viewer 
+        src="https://rhenan-ai-engineering.github.io/viewTotem/totemAutoTriagem.glb"  alt="modelo totem auto Triagem"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        camera-controls
+        touch-action="pan-y"
+        shadow-intensity="1"
+    >
+        <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; padding: 10px 20px; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); cursor: pointer;">
+            ✨ Ver em Realidade Aumentada
+        </button>
+    </model-viewer>
+</body>
+</html>
